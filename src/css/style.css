@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-columns: repeat(auto-fill, 275px);
   grid-gap: 10px;
   justify-content: center;
 }
@@ -9,6 +9,13 @@
   padding: 10px;
   border-radius: 10px;
   background-color: #f2f2f2;
+
+}
+
+.item:hover {
+  cursor: pointer;
+  transition: all 500ms ease;
+  background: rgba(0,0,0,0.4);
 }
 
 .item img{
@@ -31,14 +38,17 @@
   padding: 0;
   margin: 0;
 }
+
 p {
   margin-bottom: 20px;
 }
+
 .wrapper {
   width: 80%;
   margin: auto;
   overflow:hidden;
 }
+
 header {
   background: rgba(0,0,0,0.6);
   width: 100%;
@@ -49,21 +59,27 @@ header {
 nav {
   float: left; /* Desplazamos el nav hacia la izquierda */
 }
+
 nav ul {
   list-style: none;
   overflow: hidden; /* Limpiamos errores de float */
 }
+
 nav ul li {
   float: left;
   font-family: Arial, sans-serif;
   font-size: 16px;
+  transition: all 300ms ease;
 }
+
 nav ul li a {
   display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
   padding: 20px;
   color: #fff;
   text-decoration: none;
 }
+
 nav ul li:hover {
   background: darkorange;
+
 }
