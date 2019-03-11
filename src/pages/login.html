@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ingresar Usuario</title>
+
+    <!--Firebase---------------------------------------------->
+
+      <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyCLXEGETb6pWNvmukEtYAGv4jTaYyjDpV0",
+          authDomain: "tiendaonline-5a179.firebaseapp.com",
+          databaseURL: "https://tiendaonline-5a179.firebaseio.com",
+          projectId: "tiendaonline-5a179",
+          storageBucket: "tiendaonline-5a179.appspot.com",
+          messagingSenderId: "83667291581"
+        };
+        firebase.initializeApp(config);
+      </script>
+    <!------------------------------------------------------->
+
+  </head>
+  <body>
+    <h3>Registrate</h3>
+
+    <div class="containerForm">
+      <input type="text" id="email" placeholder="Ingrese Usuario">
+      <input type="password" id="password" placeholder="Ingrese Contraseña">
+      <button class="send" onclick="registrar()">Enviar</button>
+    </div>
+
+    <h3>Ingresa</h3>
+
+    <div class="containerForm">
+      <input type="text" id="emailIngreso" placeholder="Ingrese Usuario">
+      <input type="password" id="passwordIngreso" placeholder="Ingrese Contraseña">
+      <button class="send" onclick="Ingreso()">Ingresar</button>
+    </div>
+
+    <div id="userRegistrado">
+    </div>
+
+    <script src="../js/functions.js"></script>
+  </body>
+</html>

@@ -1,9 +1,14 @@
+body{
+  background-color: #EBEBEB;
+}
+
 /*--Slider--*/
 
 .containerSlider{
  max-width: 100%;
  position:relative;
  margin:0 auto;
+ margin-bottom: 10px;
 }
 
 .imagenSlider{
@@ -22,6 +27,7 @@
    font-size:18px;
    transition:0.6s ease;
    border-radius:0 3px 3px 0;
+
 }
 
 .next{
@@ -31,21 +37,23 @@
 
 .prev:hover, .next:hover{
  background-color:rgba(0,0,0,0.4);
+ color: #fff;
 }
 
 .text{
  color:#f2f2f2;
- font-size:15px;
+
  padding:8px 12px;
  position:absolute;
- bottom:8px;
- width:100%;
+ top: 25%;
+ width:35%;
  text-align:center;
+ font: sans;
 }
 
 .numberImage{
  color:#f2f2f2;
- font-size:12px;
+ font-size:15px;
  padding:8px 12px;
  position:absolute;
  top:0;
@@ -77,13 +85,14 @@
   grid-template-columns: repeat(auto-fill, 275px);
   grid-gap: 10px;
   justify-content: center;
-
+  margin-top: 30px;
 
 }
 
 .item {
   border-radius: 10px;
   border: solid 1px #f1f1f1;
+  background-color: #fff;
 }
 
 .item:hover {
@@ -123,7 +132,7 @@ p {
 }
 
 .wrapper {
-  width: 80%;
+  width: 70%;
   margin: auto;
   overflow:hidden;
 }
@@ -133,10 +142,11 @@ header {
   width: 100%;
   position: fixed;
   z-index: 10;
+  padding: 25px;
 }
 
 nav {
-  float: left; /* Desplazamos el nav hacia la izquierda */
+  float: right; /* Desplazamos el nav hacia la izquierda */
 }
 
 nav ul {
@@ -147,7 +157,7 @@ nav ul {
 nav ul li {
   float: left;
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   transition: all 500ms ease;
 }
 
@@ -166,22 +176,8 @@ nav ul li:hover {
   background: #fff;
 }
 
-.slider{
-  display: grid;
-  justify-content: center;
-  width: 100%;
-  background-color: darkorange;
-}
-
-.slider img{
-  max-width: 100%;
-  height: auto;
-}
-
-@supports(object-fit: cover){
-    .slider img{
-      height: 100%;
-      object-fit: cover;
-      object-position: center center;
-    }
+.titles {
+  padding: 10px 12px;
+  background-color: #fff;
+  color:#888;
 }

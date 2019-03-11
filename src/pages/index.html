@@ -3,8 +3,27 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+
     <link rel="stylesheet" href="../css/style.css">
     <script type="text/javascript" src="../js/functions.js"></script>
+
+  <!--Firebase---------------------------------------------->
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCLXEGETb6pWNvmukEtYAGv4jTaYyjDpV0",
+        authDomain: "tiendaonline-5a179.firebaseapp.com",
+        databaseURL: "https://tiendaonline-5a179.firebaseio.com",
+        projectId: "tiendaonline-5a179",
+        storageBucket: "tiendaonline-5a179.appspot.com",
+        messagingSenderId: "83667291581"
+      };
+      firebase.initializeApp(config);
+    </script>
+  <!------------------------------------------------------->
+
     <title>Tienda online</title>
   </head>
   <body>
@@ -15,8 +34,8 @@
     				<li><a href="#">Inicio</a></li>
     				<li><a href="#">Tutoriales</a></li>
     				<li><a href="#">Cursos</a></li>
-    				<li><a href="#">Preguntame</a></li>
-    				<li><a href="#">Contacto</a></li>
+    				<li><a href="login.html">Log In</a></li>
+    				<li><a href="#">Categorias ⇲</a></li>
     			</ul>
         </nav>
         </section>
@@ -25,26 +44,32 @@
     <div class="containerSlider">
 
       <div class="imagenSlider fade">
-        <div class="numberImage">1/4</div>
-        <img src="../img/8A1.jpg" style="width:100%">
+        <div class="numberImage">1/5</div>
+        <img src="../img/1.jpeg" style="width:100%">
         <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
       </div>
 
       <div class="imagenSlider fade">
-        <div class="numberImage">2/4</div>
-        <img src="../img/72677.jpg" style="width:100%">
+        <div class="numberImage">2/5</div>
+        <img src="../img/2.jpg" style="width:100%">
+        <div class="text"><h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3></div>
+      </div>
+
+      <div class="imagenSlider fade">
+        <div class="numberImage">3/5</div>
+        <img src="../img/3.jpg" style="width:100%">
         <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
       </div>
 
       <div class="imagenSlider fade">
-        <div class="numberImage">3/4</div>
-        <img src="../img/AE2.jpg" style="width:100%">
+        <div class="numberImage">4/5</div>
+        <img src="../img/4.jpg" style="width:100%">
         <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
       </div>
 
       <div class="imagenSlider fade">
-        <div class="numberImage">4/4</div>
-        <img src="../img/72677.jpg" style="width:100%">
+        <div class="numberImage">5/5</div>
+        <img src="../img/5.jpg" style="width:100%">
         <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
       </div>
 
@@ -53,10 +78,17 @@
 
     </div>
 
+    <div class="titles"><h1 class="titlesH1">Más Pedidos</h1></div>
+
     <div class="container">
       <div class="item nivel-1">
         <img src="../img/maple-leaves-3831861_1920.jpg">
+        <div class="detailsArticle">
+          <div class="precio"><h3>1.300</h3></div><br/>
+          <div class="description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
       </div>
+
       <div class="item nivel-2">
         <img src="../img/aged-1867381_640.jpg">
       </div>
@@ -90,6 +122,7 @@
       <div class="item nivel-3">
         <img src="../img/AE2.jpg">
       </div>
+
     </div>
   </body>
 </html>
