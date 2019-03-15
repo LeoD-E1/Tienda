@@ -62,25 +62,27 @@ function Ingreso() {
 
 function observador(){
 
-
   firebase.auth().onAuthStateChanged(function(user) {
 
     if (user) {
       // User is signed in.
       console.log("usuario activo")
       mostrar(user);
+
       var displayName = user.displayName;
       var email = user.email;
+
+      console.log(user);
+      console.log("********************");
+      console.log(user.emailVerified);
+      console.log("********************");
+
       var emailVerified = user.emailVerified;
       var photoURL = user.photoURL;
       var isAnonymous = user.isAnonymous;
       var uid = user.uid;
       var providerData = user.providerData;
 
-      console.log(user);
-      console.log("********************");
-      console.log(user.emailVerified);
-      console.log("********************");
       // ...
     } else {
         // User is signed out.
@@ -89,14 +91,13 @@ function observador(){
       }
   });
 }
-
 observador();
 
 function mostrar(user) {
-  let user = user;
+  var user = user;
   let content = document.getElementById("userRegistrado");
 
-  if (user.user.emailVerified){
+  if (user.emailVerified){
     content.innerHTML = `
       <h1>Bienvenido!</h1>
       <button onclick="salir()">Salir</button>

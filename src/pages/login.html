@@ -2,7 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Ingresar Usuario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleLogin.css">
+    <link rel="icon" type="image/png" href="../img/learningfy.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 
     <!--Firebase---------------------------------------------->
 
@@ -20,28 +27,59 @@
         firebase.initializeApp(config);
       </script>
     <!------------------------------------------------------->
-
+    <title>Usuario</title>
   </head>
   <body>
-    <h3>Registrate</h3>
+    <div class="loginContainer">
 
-    <div class="containerForm">
-      <input type="text" id="email" placeholder="Ingrese Usuario">
-      <input type="password" id="password" placeholder="Ingrese Contraseña">
-      <button class="send" onclick="registrar()">Enviar</button>
-    </div>
+      <div class="header">
+        <a href="index.html"><i class="material-icons">arrow_back</i></a>
+      </div>
 
-    <h3>Ingresa</h3>
+      <div class="card">
+        <div class="title">
+          <h3>¿Aun no tenes cuenta learningfy? <br> Registrate con tu E-mail</h3>
+        </div>
 
-    <div class="containerForm">
-      <input type="text" id="emailIngreso" placeholder="Ingrese Usuario">
-      <input type="password" id="passwordIngreso" placeholder="Ingrese Contraseña">
-      <button class="send" onclick="Ingreso()">Ingresar</button>
-    </div>
+        <div class=" containerForm">
+          <input type="text" class="textBox" id="email" placeholder="Usuario"> <br>
+          <input type="password" class="textBox" id="password" placeholder="Contraseña"> <br>
+          <button class="send" onclick="registrar()">Enviar</button>
+        </div>
 
-    <div id="userRegistrado">
+        <div class="title"><h3>Inicia Sesion</h3></div>
+
+        <div class="containerForm">
+          <input type="text" class="textBox" id="emailIngreso" placeholder="Usuario"><br>
+          <input type="password" class="textBox" id="passwordIngreso" placeholder="Contraseña"><br>
+          <button class="send" onclick="Ingreso()">Ingresar</button>
+        </div>
+
+        <div class="acounts">
+          <div class="google" onclick="registroGoogle()">
+            <div class="divImg">
+              <img src="../img/google.png" width="35px" >
+            </div>
+            <div class="divTexto">
+              <h5 class="" style="color:#999;">Inicia sesion con Google</h5>
+            </div>
+          </div>
+          <div class="facebook" onclick="registroFace()">
+            <div class="divImg">
+              <img src="../img/facebook.png" width="40px">
+            </div>
+            <div class="divTexto">
+              <h5 class="">Inicia sesion con Facebook</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="userRegistrado">
+      </div>
     </div>
 
     <script src="../js/functions.js"></script>
+
   </body>
 </html>
