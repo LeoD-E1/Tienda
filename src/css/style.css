@@ -1,5 +1,8 @@
 body{
-  background-color: #EBEBEB;
+  background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 /*--Slider--*/
@@ -132,17 +135,37 @@ p {
 }
 
 .wrapper {
-  width: 70%;
+  max-width: 70%;
   margin: auto;
   overflow:hidden;
 }
 
+.logo{
+  max-width: 30%;
+  float: left;
+}
+
+.logo .imgLogo img{
+  max-width: 100%;
+}
+
+
 header {
-  background: rgba(0,0,0,0.6);
+  /* background: rgba(0,0,0,0.6); */
+  background-color: #fff;
   width: 100%;
   position: fixed;
   z-index: 10;
-  padding: 10px;
+  justify-content: center;
+  padding: 5px;
+}
+
+.containerHeader{
+  max-width: 80%;
+  position: relative;
+  left: 10%;
+  justify-content: center;
+  background-color: darkorange:
 }
 
 nav {
@@ -164,16 +187,16 @@ nav ul li {
 nav ul li a {
   display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
   padding: 20px;
-  color: #fff;
+  color: darkorange;
   text-decoration: none;
 }
 
 nav ul li a:hover{
-  color: #000;
+  color: #fff;
 }
 
 nav ul li:hover {
-  background: #fff;
+  background: rgba(0,0,0,0.6);;
 }
 
 .titles {
