@@ -1,5 +1,10 @@
 
 /* ----------Login */
+
+*{
+  box-sizing: border-box;
+}
+
 body{
   font-family: 'Muli', sans-serif;
   padding: 0;
@@ -14,8 +19,6 @@ background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, F
   max-width: 100%;
   text-align: center;
   justify-content: center;
-
-
 }
 
 .textBox{

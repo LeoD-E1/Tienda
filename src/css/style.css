@@ -9,8 +9,7 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, F
 
 .containerSlider{
  max-width: 100%;
- position:relative;
- margin:0 auto;
+ padding-top: 4%;
  margin-bottom: 10px;
 }
 
@@ -82,19 +81,67 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, F
 /*--Fin Slider--*/
 
 /*--Productos--*/
+.box{
+  max-width: 100%;
+}
+
+.leatleBox{
+  position: relative;
+  max-width: 90%;
+  position: relative;
+  left: 5%;
+}
+
+.categories{
+  width: 20%;
+  float: left;
+  background-color: #EBEBEB;
+}
+
+.categories ul{
+  list-style: none;
+}
+
+.categories ul li{
+  background-color: #053D4E;
+  padding:10px;
+  width: 100%;
+  transition: 300ms ease;
+}
+
+.categories ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: darkorange;
+  padding: 10px;
+}
+
+.categories ul li a:hover{
+  color: #000;
+}
+
+.categories ul li:hover{
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.line{
+  border: 1px solid #EBEBEB;
+}
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 275px);
+  grid-template-columns: repeat(auto-fill, 219px);
   grid-gap: 10px;
-  justify-content: center;
   margin-top: 30px;
-
+  position: relative;
+  left: 5%;
+  width: 75%;
 }
 
 .item {
   border-radius: 10px;
-  border: solid 1px #f1f1f1;
+  border: solid 1px #EBEBEB;
   background-color: #fff;
 }
 
@@ -134,10 +181,29 @@ p {
   margin-bottom: 20px;
 }
 
+header {
+  /* background: rgba(0,0,0,0.6); */
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  justify-content: center;
+  padding: 5px;
+}
+
+.containerHeader{
+  max-width: 90%;
+  position: relative;
+  left: 5%;
+}
+
 .wrapper {
   max-width: 70%;
-  margin: auto;
   overflow:hidden;
+  position: relative;
+  left: 5%;
 }
 
 .logo{
@@ -149,32 +215,17 @@ p {
   max-width: 100%;
 }
 
-
-header {
-  /* background: rgba(0,0,0,0.6); */
-  background-color: #fff;
-  width: 100%;
-  position: fixed;
-  z-index: 10;
-  justify-content: center;
-  padding: 5px;
-}
-
-.containerHeader{
-  max-width: 80%;
-  position: relative;
-  left: 10%;
-  justify-content: center;
-  background-color: darkorange:
-}
-
 nav {
-  float: right; /* Desplazamos el nav hacia la izquierda */
+  float: right;
+  width: 70%;
+  position: relative;
+  padding-left: 6%;
 }
 
 nav ul {
   list-style: none;
-  overflow: hidden; /* Limpiamos errores de float */
+  width: 100%;
+  overflow: hidden;
 }
 
 nav ul li {
@@ -185,8 +236,8 @@ nav ul li {
 }
 
 nav ul li a {
-  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
-  padding: 20px;
+  display: block;
+  padding: 25px;
   color: darkorange;
   text-decoration: none;
 }
@@ -196,11 +247,49 @@ nav ul li a:hover{
 }
 
 nav ul li:hover {
-  background: rgba(0,0,0,0.6);;
+  background: rgba(0,0,0,0.6);
+}
+
+.search{
+  width: 30%;
+  position: relative;
+}
+
+.barra{
+  max-width: 80%;
+  position: relative;
+  left: 20%;
+  padding-top: 4%;
+  box-sizing: border-box;
+}
+
+.searchBar{
+  padding: 10px;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  background-color: #EBEBEB;
+}
+
+.text{
+  max-width: 20%;
+  float: left;
 }
 
 .titles {
   padding: 10px 12px;
   background-color: #fff;
   color:#888;
+}
+
+.material-icons{
+  color: #000;
+  transition: 300ms ease;
+  padding: 5px;
+}
+
+.material-icons:hover{
+  cursor: pointer;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
 }
