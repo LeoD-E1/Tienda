@@ -1,16 +1,22 @@
 body{
-  background: #ECE9E6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  /* background: #ECE9E6;
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+Chrome 10-25, Safari 5.1-6
+background: linear-gradient(to right, #FFFFFF, #ECE9E6);  Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
+background-color: #F3F3F4;
 }
 
 /*--Slider--*/
 
 .containerSlider{
- max-width: 100%;
- padding-top: 4%;
- margin-bottom: 10px;
+ max-width: 80%;
+ padding-top: 6%;
+ margin-bottom: 30px;
+ position: relative;
+ left: 10%;
+ -webkit-box-shadow: 2px 28px 5px -22px rgba(0,0,0,0.57);
+-moz-box-shadow: 2px 28px 5px -22px rgba(0,0,0,0.57);
+box-shadow: 2px 28px 5px -22px rgba(0,0,0,0.57);
 }
 
 .imagenSlider{
@@ -22,9 +28,8 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, F
    position:absolute;
    top:50%;
    width:auto;
-   margin-top:-22px;
    padding:16px;
-   color:darkorange;
+   color:#fff;
    font-weight:bold;
    font-size:18px;
    transition:0.6s ease;
@@ -34,7 +39,6 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, F
 
 .next{
  right:0;
- border-radius:3px 0 0 3px;
 }
 
 .prev:hover, .next:hover{
@@ -44,7 +48,6 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, F
 
 .text{
  color:#f2f2f2;
-
  padding:8px 12px;
  position:absolute;
  top: 25%;
@@ -74,7 +77,7 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, F
 }
 
 @keyframes fade{
- from{opacity:.4}
+ from{opacity:.1}
  to{opacity:1}
 }
 
@@ -87,15 +90,38 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, F
 
 .leatleBox{
   position: relative;
-  max-width: 90%;
+  max-width: 80%;
   position: relative;
-  left: 5%;
+  left: 10%;
+
+}
+
+.titleCat{
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  text-align: center;
+  font-size: 28px;
+  color: #999;
+}
+
+.titles {
+  height: 50px;
+  background-attachment: fixed;
+  color: #999;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 75%;
+  font-size: 25px;
+  float: right;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
 }
 
 .categories{
   width: 20%;
   float: left;
-  background-color: #EBEBEB;
+  position: relative;
+  margin-top: 30px;
 }
 
 .categories ul{
@@ -103,25 +129,25 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, F
 }
 
 .categories ul li{
-  background-color: #053D4E;
   padding:10px;
   width: 100%;
   transition: 300ms ease;
+  border-bottom: 1px solid #999;
+  background-color: #21397F;
 }
 
 .categories ul li a{
   text-decoration: none;
-  font-size: 20px;
-  color: darkorange;
+  font-size: 18px;
+  color: #999;
   padding: 10px;
-}
-
-.categories ul li a:hover{
-  color: #000;
+  position: relative;
+  left: 35%;
+  font-family: Arial, sans-serif;
 }
 
 .categories ul li:hover{
-  background-color: #fff;
+  background-color: #333;
   cursor: pointer;
 }
 
@@ -131,7 +157,7 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, F
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 219px);
+  grid-template-columns: repeat(auto-fill, 244px);
   grid-gap: 10px;
   margin-top: 30px;
   position: relative;
@@ -156,13 +182,13 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, F
   border-radius: 10px;
 }
 
-.nivel-1 {
+/* .nivel-1 {
   grid-row-end: span 3;
 }
 
 .nivel-2 {
   grid-row-end: span 2;
-}
+} */
 
 .nivel-3 {
   grid-row-end: span 1;
@@ -184,8 +210,7 @@ p {
 header {
   /* background: rgba(0,0,0,0.6); */
   background-color: #fff;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom: 1px solid #EBEBEB;
   width: 100%;
   position: fixed;
   z-index: 10;
@@ -274,12 +299,6 @@ nav ul li:hover {
 .text{
   max-width: 20%;
   float: left;
-}
-
-.titles {
-  padding: 10px 12px;
-  background-color: #fff;
-  color:#888;
 }
 
 .material-icons{
