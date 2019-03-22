@@ -1,0 +1,14 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+.row{
+  padding: 10px;
+  background-color: darkorange;
+}
+
+.nav a{
+  background-color: yellow;
+  padding: 10px;
+}
