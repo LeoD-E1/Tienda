@@ -11,24 +11,28 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 
-    <title></title>
+    <title>Tienda de productos digitales - Learningfy</title>
   </head>
   <body>
-
+    <!--Barra de navegacion-->
     <div class="container-fluid">
-      <div class="row">
-        <div class="logo">
-          <img src="../img/" alt="">
+      <div class="row Principal">
+        <div class="col-md-7">
+          <div class="row Secundario">
+            <div class="col-md-6">
+                <img class="img-fluid" src="../img/learningfy-logo2.png">
+            </div>
+            <div class="col-md-6 Nav">
+              <nav class="nav">
+                <a class="nav-link active" href="#">Active</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </nav>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <nav class="nav">
-            <a class="nav-link active" href="#">Active</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </nav>
-        </div>
-        <div class="col-md-4">
+        <div class="col-md-3 searchBar">
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
@@ -36,14 +40,51 @@
             </button>
           </form>
         </div>
-        <div class="col-md-2">
-          <button type="button" class="btn btn-outline-dark">Iniciar sesion</button>
-          <button type="button" class="btn btn-danger">Registrate</button>
+        <div class="col-md-2 Buttons">
+          <a href="#">
+            <button type="button" class="btn btn-outline-dark">
+              Iniciar sesion</button>
+          </a>
+            <a href="#">
+              <button type="button" class="btn btn-danger">Registrate</button>
+            </a>
         </div>
-        </div>
+      </div>
     </div>
 
-    <!---->
+    <!-------------------------->
+
+    <!--Img Ppal-->
+    <div class="row imgPpal" style="height:650px">
+      <div class="col-md-5">
+        <div class="Search">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 " type="search" placeholder="Buscar.." aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+              <i class="material-icons">search</i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="title">
+          <h1>Title</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  <!----------------------->
+  <div class="containerCards">
+    <div class="card" style="width: 15rem;">
+      <img src="../img/aged-1867381_640.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </body>

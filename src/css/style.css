@@ -1,14 +1,64 @@
+body{
+  overflow-x: hidden;
+}
+
 *{
   padding: 0px;
   margin: 0px;
 }
 
-.row{
+.Principal{
   padding: 10px;
-  background-color: darkorange;
+  border-bottom: 1px solid #EBEBEB;
+  justify-content: center;
 }
 
-.nav a{
-  background-color: yellow;
-  padding: 10px;
+.Nav{
+  padding-top: 1%;
+}
+
+.Nav nav a{
+  transition: all 300ms ease;
+}
+
+.Nav nav a:hover{
+  background-color: #333;
+  color: #fff;
+}
+
+.searchBar{
+  padding-top: 1%;
+}
+
+.Buttons{
+  padding-top: 1%;
+}
+
+.imgPpal{
+  background: url("../img/arboles.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+
+.Search{
+  position: relative;
+  top: 25%;
+  left: 10%;
+}
+
+ .title{
+   color: #fff;
+   position: relative;
+   top: 25%;
+   left: 10%;
+ }
+
+ .title p{
+  font-size: 20px;
+ }
+
+.containerCards{
+  display: grid;
+  
 }
