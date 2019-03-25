@@ -19,6 +19,7 @@ body{
 
 .Nav nav a{
   transition: all 300ms ease;
+  border-radius: 5px;
 }
 
 .Nav nav a:hover{
@@ -38,6 +39,7 @@ body{
   background: url("../img/arboles.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: center center;
   justify-content: flex-end;
 }
 
@@ -58,7 +60,24 @@ body{
   font-size: 20px;
  }
 
+.secondNav{
+  max-width: 90%;
+  position: relative;
+  left: 5%;
+  margin-top: 20px;
+  color: #666;
+}
+
 .containerCards{
   display: grid;
-  
+  grid-template-columns: repeat(auto-fill, 240px);
+  grid-gap: 10px;
+  justify-content: center;
+  border: 1px solid #EBEBEB;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 90%;
+  position: relative;
+  left: 5%;
+  margin-top: 10px;
 }
