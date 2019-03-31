@@ -5,11 +5,20 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/style.css">
 
-    <script type="text/javascript" src="../js/functions.js"></script>
+
 
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+
+    <!---firebase--->
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
+    <script type="text/javascript" src="../js/firestore.js"></script>
+
+    <!---firebase--->
 
     <title>Tienda de productos digitales - Learningfy</title>
   </head>
@@ -24,9 +33,10 @@
             </div>
             <div class="col-md-6 Nav">
               <nav class="nav">
-                <a class="nav-link active" href="#">Active</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">
+                  <i class="material-icons">category</i>
+                  Categorias
+                </a>
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </nav>
             </div>
@@ -43,10 +53,13 @@
         <div class="col-md-2 Buttons">
           <a href="#">
             <button type="button" class="btn btn-outline-dark">
-              Iniciar sesion</button>
+              Iniciar sesion
+            </button>
           </a>
-            <a href="#">
-              <button type="button" class="btn btn-danger">Registrate</button>
+            <a href="registrate.html">
+              <button type="button" class="btn btn-danger">
+                Registrate
+              </button>
             </a>
         </div>
       </div>
@@ -74,7 +87,9 @@
       </div>
       <div class="col-md-3"></div>
     </div>
+
   <!----------------------->
+
       <div class="row secondNav">
         <div class="col-md-3">
           <div>
@@ -101,7 +116,7 @@
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary" style="">Go</a>
+            <a href="#" class="btn btn-primary" style="">Más Informacion</a>
           </div>
         </div>
 
@@ -153,8 +168,17 @@
 
       <!-------------------------------->
 
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Fluid jumbotron</h1>
+          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+      </div>
 
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script type="text/javascript" src="../js/functions.js"></script>
+
   </body>
 </html>

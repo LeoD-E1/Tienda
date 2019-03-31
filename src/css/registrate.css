@@ -1,0 +1,45 @@
+
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+.general{
+  text-align: center;
+  padding: 20px;
+  justify-content: center;
+}
+
+.containerLogin{
+  border: 1px solid #EBEBEB;
+  padding: 30px;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.containerLogo{
+  margin-bottom: 20px;
+}
+
+.googleButton, .facebookButton {
+  border-radius: 10px;
+  padding: 5px;
+  border:0;
+  border-bottom: 1px solid #EBEBEB;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.googleButton:hover, .facebookButton:hover {
+  border-bottom: 1px solid #fff;
+  background-color: #F04E23;
+}
+
+.separacion{
+  padding: 5px;
+}
+
+.containerForm{
+  margin-bottom: 20px;
+}

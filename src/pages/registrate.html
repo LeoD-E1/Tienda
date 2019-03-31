@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/registrate.css">
+
+    <!---firebase--->
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
+    <script type="text/javascript" src="../js/firestore.js"></script>
+
+    <!---firebase--->
+
+    <title>Registrate - Learningfy</title>
+
+  </head>
+  <body>
+
+    <div class="general">
+
+          <div class="containerLogo">
+            <a href="index.html">
+              <img src="../img/learningfy-logo3.png" width="50px" alt="inicio">
+            </a>
+          </div>
+
+          <div class="containerLogin">
+
+            <div class="containerButtons">
+              <div class="googleButton">
+                <img src="../img/google.png" width="40px">
+              </div>
+              <div class="facebookButton">
+                <img src="../img/facebook.png" width="40px">
+              </div>
+            </div>
+
+            <div class="separacion">
+              <hr class="separator"> <p><b>O</b></p> <hr class="separator">
+            </div>
+
+            <div class="containerForm">
+              <input type="email" class="form-control my-2" id="nameRegistro" placeholder="Nombre y apellido">
+              <input type="email" class="form-control my-2" id="emailRegistro" placeholder="Email">
+              <input type="password" class="form-control my-2" id="passwordRegistro" placeholder="Contaseña"><br>
+              <button class="btn btn-info" type="button"  id="save" onclick="registrarUser()">Enviar</button>
+            </div>
+
+            <div class="containerLog">
+              <div class="Iniciar">
+                <h6>
+                  ¿Tenes una cuenta?
+                  <a href="iniciar.html">Haz click aqui</a>
+                  para iniciar sesion.
+                </h6>
+              </div>
+            </div>
+
+          </div>
+
+    </div>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </body>
+</html>
