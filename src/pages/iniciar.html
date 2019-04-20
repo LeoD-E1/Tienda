@@ -31,27 +31,30 @@
           <div class="containerLogin">
 
             <div class="containerTitle">
-              <h3 class="title">Inicio de Sesion</h3>
+              <h4 class="title">Inicio de Sesion</h4>
             </div>
 
             <div class="containerButtons">
-              <div class="googleButton">
-                <img src="../img/google.png" width="40px">
-              </div>
-              <div class="facebookButton">
-                <img src="../img/facebook.png" width="40px">
+              <div class="facebookButton" onclick="iniciarFaceebook()">
+                <h6>Inicia sesión con Facebook</h6>
               </div>
             </div>
 
             <div class="separacion">
-              <hr class="separator"> <p><b>O</b></p> <hr class="separator">
+              <br><p><b>Ó</b></p> <hr class="separator">
             </div>
 
             <div class="containerForm">
               <input type="email" class="form-control my-2" id="emailInicio" placeholder="Email">
-              <input type="password" class="form-control my-2" id="passwordInicio" placeholder="Contaseña"><br>
-
-              <button class="btn btn-info" type="button"  id="save" onclick="iniciarSesion()">Ingresar</button>
+              <input type="password" class="form-control my-2" id="passwordInicio" placeholder="Contaseña">
+              <div class="containerForget">
+                <div class="olvidar">
+                  <h6>
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                  </h6>
+                </div>
+              </div><br>
+              <button class="btn btn-primary" type="button"  id="save" onclick="iniciarSesion()">Ingresar</button>
             </div>
 
             <div class="containerLog">
@@ -67,7 +70,7 @@
           </div>
 
     </div>
-
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </body>
 </html>

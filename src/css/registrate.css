@@ -30,18 +30,19 @@
 }
 
 .googleButton, .facebookButton {
-  border-radius: 10px;
-  padding: 5px;
   border:0;
   border-bottom: 1px solid #EBEBEB;
-  margin-top: 5px;
   cursor: pointer;
   transition: all 400ms ease;
+  padding: 5px;
+  color: #fff;
+  background-color: #4267B2;
+  margin-top: 5px;
 }
 
 .googleButton:hover, .facebookButton:hover {
-  border-bottom: 1px solid #fff;
-  background-color: #F04E23;
+
+  background-color: #3b5998;;
 }
 
 .separacion{
